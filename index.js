@@ -131,7 +131,7 @@ var app = express();
 app.use(
   "/graphql",
   graphqlHTTP({
-    schema: buildSchema,
+    schema: schema,
     rootValue: root,
     graphiql: true,
   })
